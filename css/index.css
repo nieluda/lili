@@ -1,0 +1,203 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'duang';
+	src:url(../fonts/Munro.eot) url(../fonts/Munro.otf) url(../fonts/Munro.svg) url(../fonts/Munro.ttf) url(../fonts/Munro.woff);
+}
+* {
+	margin: 0 auto;
+	padding: 0 auto;
+	font-family:'duang';
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	border: none;
+}
+input{
+	border:none;
+	background-color:transparent;
+	}
+.clear{
+	clear:both;}
+header {
+	height: 110px;
+	background: #e5e5e5;
+}
+.logo {
+	float: left;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Open Sans';
+	color: #4d879f;
+}
+nav {
+	float: right;
+}
+#one{
+	
+	background-image:-moz-linear-gradient(left bottom,#8cbe75,#4FA19B,#4468be);
+	background-image:-webkit-linear-gradient(45deg,#8cbe75 5%,#4FA19B 30%,#4468be);
+	background-image:-o--linear-gradient(left bottom,#8cbe75,#4FA19B,#4468be);
+	background-image:-ms-linear-gradient(left bottom,#8cbe75,#4FA19B,#4468be);
+	padding:100px 0;
+	}
+.inner{
+	width:1000px;
+	margin:0 auto;
+	text-align:center;}	
+#one h2{
+	font-size:36px;
+	color:#FFFFFF;
+	font-weight:normal;
+	line-height:61px;
+	font-family:'Open Sans';}
+#one h2 a{
+	color: #FFF;
+	position: relative;
+	font-family: Open Sans;
+	}
+#one h2 a:before{
+	content:'';
+	display:block;
+	width:100%;
+	height:1px;
+	position:absolute;
+	left:0;
+	top:100%;
+	border-bottom:1px #fff dashed;
+	transition:all 0.5s;
+	opacity:0;}
+#one h2 a:hover:before{
+	opacity:1;
+	top:0;}
+#one h2 a:after{
+	content:'';
+	display:block;
+	width:100%;
+	height:1px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	border-bottom:1px #fff dashed;}
+#one p{
+	font-size:20px;
+	color:#D0E5EA;
+	line-height:40px;
+	font-family: 'Open Sans';
+	}
+#one h3{
+	position:relative;}
+#one h3 a{
+	width:175px;
+	display:inline-block;
+	height:50px;
+	border:1px #fcfffd solid;
+	border-radius:4px;
+	color:#FFF;
+	line-height:50px;
+	text-transform:uppercase;
+	margin-top:33px;
+	font-weight:normal;
+	transition:all 0.5s;
+	}
+#one h3 a:after{
+	content:'';
+	display:block;
+	width:1px;
+	height:100px;
+	background:#fff;
+	position:absolute;
+	left:50%;
+	top:85px;
+	}
+#one h3 a:hover{
+	width:240px;
+	background:rgba(255,255,255,0.5);}
+.icon{
+	font-size:87px;
+	color:#fff;
+	text-shadow:0 0 0px #fff,
+	0 0 0px #fff;
+	-moz-animation:donghua 2s infinite;
+	-ms-animation:donghua 2s infinite;
+	-o-animation:donghua 2s infinite;
+	-webkit-animation:donghua 2s infinite;}
+@keyframes donghua{
+	0%{text-shadow:0 0 0px #fff;}
+	25%{text-shadow:0 0 8px #fff;}
+	50%{text-shadow:0 0 8px #fff,0 0 13px #fff;}
+	75%{text-shadow:0 0 8px #fff;}}
+@-moz-keyframes donghua{
+	0%{text-shadow:0 0 0px #fff;}
+	25%{text-shadow:0 0 8px #fff;}
+	50%{text-shadow:0 0 8px #fff,0 0 13px #fff;}
+	75%{text-shadow:0 0 8px #fff;}}
+@-webkit-keyframes donghua{
+	0%{text-shadow:0 0 0px #fff;}
+	25%{text-shadow:0 0 8px #fff;}
+	50%{text-shadow:0 0 8px #fff,0 0 13px #fff;}
+	75%{text-shadow:0 0 8px #fff;}}
+@-o-keyframes donghua{
+	0%{text-shadow:0 0 0px #fff;}
+	25%{text-shadow:0 0 8px #fff;}
+	50%{text-shadow:0 0 8px #fff,0 0 13px #fff;}
+	75%{text-shadow:0 0 8px #fff;}}
+
+#two{background:#eaf9fe;}
+
+.two_left ul li{
+	float:left;
+	width:140px;
+	height:140px;
+	border:1px #6290ab solid;
+	border-radius:6px;
+	margin:40px;
+	transform:rotate(45deg);
+	overflow:hidden;}
+.two_left ul li:hover{
+	background-color:#42b3da;}
+.two_left ul li a{
+	font-size:86px;
+	text-align:center;
+	line-height:140px;
+	display:block;
+	transform:rotate(-45deg);
+	transition:all 0.5s;}
+.two_left ul li:first-child a{
+	color:#c1e697;
+	}
+.two_left ul li:first-child a:hover{
+	transform:scale(1.5,1.5) rotate(-45deg);
+	color:#fff;}
+.two_left ul li:nth-child(2) a{
+	color:#8addab;}
+.two_left ul li:nth-child(2) a:hover{
+	transform:rotate(315deg);}
+.two_left ul li:nth-child(3) a{
+	color:#6bd3c8;}
+.two_left ul li:nth-child(3) a:hover{
+	transform: skewX(30deg) rotate(-45deg);}
+.two_left ul li:nth-child(4) a{
+	color:#58add2;}
+.two_left ul li:nth-child(4) a:hover{
+	transform:rotate(-315deg) scale(1.2)}
+.two_left ul li:nth-child(5) a{
+	color:#4a88d3;}
+.two_left ul li:last-child a{
+	color:#6b88e6;}
+.two_left ul li:nth-child(6) a:hover{
+	transform:rotate(-45deg) translateY(-30px);}
+.two_left{
+	width:500px;
+	float:left;
+	}
+
+.two_right{
+	width:500px;
+	float:left;
+}
